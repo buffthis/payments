@@ -1,4 +1,4 @@
-package com.ratelo.payments.core.component
+package com.ratelo.payments.core.domain.card
 
 import org.springframework.stereotype.Component
 

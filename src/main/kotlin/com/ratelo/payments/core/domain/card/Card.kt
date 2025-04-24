@@ -1,4 +1,4 @@
-package com.ratelo.payments.core.vo
+package com.ratelo.payments.core.domain.card
 
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue

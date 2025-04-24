@@ -1,4 +1,4 @@
-package com.ratelo.payments.core.component
+package com.ratelo.payments.core.domain.order
 
 import org.springframework.stereotype.Component
 

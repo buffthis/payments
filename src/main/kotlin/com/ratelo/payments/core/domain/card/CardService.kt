@@ -1,18 +1,13 @@
-package com.ratelo.payments.core.service
+package com.ratelo.payments.core.domain.card
 
-import com.ratelo.payments.core.component.CardPaymentProcessor
-import com.ratelo.payments.core.component.CardValidator
-import com.ratelo.payments.core.component.OrderValidator
-import com.ratelo.payments.core.dataaccess.CardReader
-import com.ratelo.payments.core.dataaccess.StoreReader
-import com.ratelo.payments.core.vo.Card
-import com.ratelo.payments.core.vo.CardPaymentRequest
-import com.ratelo.payments.core.vo.CustomerCard
+import com.ratelo.payments.core.domain.order.Order
+import com.ratelo.payments.core.domain.order.OrderValidator
+import com.ratelo.payments.core.domain.store.Store
+import com.ratelo.payments.core.domain.store.StoreReader
+
 import org.springframework.stereotype.Service
-import org.springframework.transaction.annotation.Transactional
 
 @Service
-@Transactional(readOnly = true)
 class CardService(
     private val orderValidator: OrderValidator,
     private val storeReader: StoreReader,
